@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: labfat-app
-          image: labfat-app
+          image: johnpradeep06/labfat-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
 ---
