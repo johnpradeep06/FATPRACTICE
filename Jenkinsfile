@@ -11,8 +11,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Uses the repository configured in the Jenkins Job GUI automatically
-                checkout scm
+                git url: 'https://github.com/johnpradeep06/Library-Management-system-.git', branch: 'main'
+                
             }
         }
 
